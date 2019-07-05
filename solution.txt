@@ -1,0 +1,42 @@
+Solution to the game.
+
+Commands:
+Use "go" to navigate to the desired direction. E.g go west
+Use "get" to acquire the items. E.g get keys
+
+Plot:
+- There are 10 locations
+- Ghost is in Dining Room
+- First you need to get 3 items (keys, phone, wallet), that then unlocks 4th item (wand). This will wipe the Ghost from the house.
+- You need to be in Garage with all items to win
+- Failure to get the wand and arriving at Dining Room (The only way to garage) will lead to you to loose the game
+
+Solution:
+>go west
+>get keys
+>go east
+>go south
+>get phone
+>go east
+>get wallet
+(At this point, you have all 3 items currently available. This will unlock magic wand in Guest room)
+>go west
+>go north
+>go north
+>get wand
+>go south
+>go east
+>go east
+
+
+          	     Guest Room          
+            Closet       |           Garden    
+              |		 N            |   
+              |		 |            |   
+Bathroom--Bedroom--W --- X --- E - Dining Room--Garage
+             		 |            |   
+             		 S            |   
+             		 |            |   
+           		Kitchen--Living Room
+			 |
+			Backyard
